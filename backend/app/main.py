@@ -1,6 +1,9 @@
 from fastapi import FastAPI
 from app.api.routers import auth, jobs, applications, ws
 from app.database.session import engine, Base
+import os
+
+port = int(os.environ.get("PORT", 8000))
 
 app = FastAPI(title="AI Recruitment Platform API", version="0.1.0")
 

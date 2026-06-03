@@ -1,6 +1,6 @@
-fastapi[all]
+fastapi
 uvicorn[standard]
-SQLAlchemy==1.4.54
+SQLAlchemy>=2.0
 alembic
 psycopg2-binary
 python-jose[cryptography]
@@ -10,4 +10,3 @@ pydantic==1.10.16
 python-multipart
 aiofiles
 openai
-python-jose

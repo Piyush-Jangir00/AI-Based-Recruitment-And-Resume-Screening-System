@@ -2,7 +2,7 @@ import os
 import openai
 from ..core.config import settings
 
-openai.api_key = settings.OPENAI_API_KEY or os.getenv("OPENAI_API_KEY")
+openai.api_key = settings.OPENAI_API_KEY or os.getenv("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")
 
 def screen_resume(text: str) -> dict:
     # Simple prompt-based screening example
